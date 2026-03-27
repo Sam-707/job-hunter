@@ -32,6 +32,9 @@ testpaths = ["tests"]
 line-length = 100
 target-version = "py311"
 
+[tool.uv]
+package = false
+
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.backends.legacy:build"
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
