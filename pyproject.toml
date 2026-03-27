@@ -1,3 +1,29 @@
+[project]
+name = "job-hunter"
+version = "1.0.0"
+description = "Job fit analysis backend with Telegram bot"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.6",
+    "uvicorn[standard]==0.32.1",
+    "sqlalchemy==2.0.36",
+    "asyncpg==0.30.0",
+    "alembic==1.14.0",
+    "pydantic==2.10.3",
+    "pydantic-settings==2.7.0",
+    "httpx==0.28.1",
+    "beautifulsoup4==4.12.3",
+    "trafilatura==2.0.0",
+    "python-multipart==0.0.20",
+    "python-dotenv==1.0.1",
+    "python-telegram-bot==21.6",
+    "tenacity==9.0.0",
+    "structlog==24.4.0",
+    "lxml==5.3.0",
+    "lxml_html_clean==0.4.1",
+    "aiosqlite==0.20.0",
+]
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
